@@ -22,7 +22,7 @@ fi
 # Install and configure emacs 24.5
 if [ ! -f /var/log/emacsinstalled ]; then
   sudo yum install gcc ncurses-devel giflib-devel libjpeg-devel libtiff-devel unzip -y
-  wget http://mirror.sdunix.com/gnu/emacs/emacs-24.5.tar.gz
+  wget http://ftp.heanet.ie/mirrors/gnu/emacs/emacs-24.5.tar.gz
   tar xzvf emacs-24.5.tar.gz
   cd emacs-24.5
   ./configure --prefix=$HOME --without-x
